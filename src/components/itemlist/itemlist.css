@@ -2,7 +2,11 @@
     background-color: blueviolet;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    gap: 20px;
-    padding: 20px 40px;
+    width: 98%;
+    gap: 0;
+    padding: 10px;
+}
+
+.list-card img{
+    width: 200px;
 }
