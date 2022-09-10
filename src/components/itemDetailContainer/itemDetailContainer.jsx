@@ -1,4 +1,4 @@
-import ItemDetail from '../itemDetail/itemDetail'
+import ItemDetail from '../itemdetail/itemDetail'
 import data from '../mock-data/mock-data'
 import {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom';
