@@ -2,7 +2,7 @@ import Item from "../item/Item"
 import './itemlist.css'
 
 const ItemList = ({productos}) =>{
-    console.log(productos)
+    // console.log(productos)
     return(
         <div className="list-card">
             {
@@ -11,7 +11,7 @@ const ItemList = ({productos}) =>{
                     <Item
                     key={prod.id}
                     name={prod.name}
-                    description={prod.desciption}
+                    // description={prod.desciption}
                     precio={prod.precio}
                     imagen={prod.imagen}
                 />
