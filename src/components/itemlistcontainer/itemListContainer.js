@@ -1,4 +1,4 @@
-import data from "./mock-data"
+import data from '../mock-data/mock-data'
 import { useState, useEffect } from "react"
 import ItemList from "../itemlist/itemList";
 import ItemCount from "../itemcount/ItemCount";
@@ -21,7 +21,7 @@ const ItemListContainer =  ({saludo, miNombre}) =>{
         useEffect(() =>{
             getData.then((result) =>{
                 setItem(result)
-                console.log (result)
+                // console.log (result)
             })
         }, [])
     return(

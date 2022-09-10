@@ -15,7 +15,6 @@ const Navbar = () =>{
                     <li className='LI-navbar'><a>Inicio</a></li>
                     <li className='LI-navbar'><a>Comida</a></li>
                     <li className='LI-navbar'><a>Bebidas</a></li>
-                    <li className='LI-navbar'><a>Postre</a></li>
                 </ul>
             </div>
             <div className='img-carrito'>
