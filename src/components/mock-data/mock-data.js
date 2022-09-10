@@ -37,23 +37,7 @@ const data = [
         precio: "$100",
         imagen: AguaSaborizadaImg,
         cantidad: 30
-    },
-    {
-        id: 5,
-        name: "ensalada de fruta",
-        desciption: "banana, naranja, manzana, ciruela, kiwi, cereza",
-        precio: "$200",
-        imagen: EnsaladaDeFrutaImg,
-        cantidad: 20
-    },
-    {
-        id: 6,
-        name: "helado",
-        desciption: "chocolate, frutilla, dulce de leche, crema americana, granizado",
-        precio: "$300",
-        imagen: HeladoImg,
-        cantidad: 20
-    },
+    }
 ]
 
 export default data;

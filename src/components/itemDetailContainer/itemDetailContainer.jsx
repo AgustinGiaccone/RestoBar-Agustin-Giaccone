@@ -6,6 +6,8 @@ import {useState, useEffect} from 'react'
 
 const ItemDetailContainer =() =>{
 
+    const id = 1
+
     const [items, setItem] = useState([]);
 
     const getData = new Promise ((resolve, reject) =>{
@@ -21,8 +23,8 @@ const ItemDetailContainer =() =>{
             })
         }, [])
     return (
-        <div>
-            <ItemDetail productos={items}/>
+        <div className="ItemDetail">
+            <ItemDetail productos={items} buttonId={id} />
         </div>
     )
 }
