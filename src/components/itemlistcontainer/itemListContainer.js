@@ -2,10 +2,10 @@ import data from '../mock-data/mock-data'
 import { useState, useEffect } from "react"
 import ItemList from "../itemlist/itemList";
 import ItemCount from "../itemcount/ItemCount";
-
+import {useParams} from 'react-router-dom';
 
 const ItemListContainer =  ({saludo, miNombre}) =>{
-
+    const{categoryId}= useParams();
     const onAdd = (quantity) =>{
         console.log(`compraste ${quantity} unidades`);
     }
@@ -15,15 +15,20 @@ const ItemListContainer =  ({saludo, miNombre}) =>{
     const getData = new Promise ((resolve, reject) =>{
         setTimeout(() =>{
                 resolve(data)
-            },2000)
+            },200)
     })
 
         useEffect(() =>{
             getData.then((result) =>{
-                setItem(result)
+                if(categoryId){
+                    const productoPorCategoria = result.filter(item=>item.categoria === categoryId )
+                    setItem(productoPorCategoria)
+                }else {
+                    setItem(result)
+                }
                 // console.log (result)
             })
-        }, [])
+        }, [categoryId])
     return(
         <div className="Container">
             <div>

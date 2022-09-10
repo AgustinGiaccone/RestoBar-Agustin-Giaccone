@@ -20,7 +20,7 @@
     font-size: 30px;
 }
 
-.Navbar-conteiner .LI-navbar{
+.Navbar-conteiner li{
     margin-left: 0;
     margin-right: 2%;
     background-color: rgba(218, 113, 113, 0.418);
@@ -31,4 +31,10 @@
     width: 50px;
     margin-right: 100px;
     margin-left: 50px;
+}
+.Ul-navbar .claseActive{
+    color: red;
+}
+.Ul-navbar .claseInactive{
+    color: green;
 }
