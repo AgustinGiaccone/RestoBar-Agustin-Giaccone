@@ -1,5 +1,5 @@
 .list-card{
-    background-color: blueviolet;
+    background-color: rgba(172, 171, 173, 0.342);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 98%;
