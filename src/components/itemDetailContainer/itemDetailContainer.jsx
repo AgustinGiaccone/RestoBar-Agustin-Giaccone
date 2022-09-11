@@ -16,6 +16,7 @@ const ItemDetailContainer =() =>{
             },100)
     })
 
+
         useEffect(() =>{
             getData.then((result) =>{
                 setItem(result)
