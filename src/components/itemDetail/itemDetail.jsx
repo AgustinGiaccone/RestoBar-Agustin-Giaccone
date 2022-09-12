@@ -1,7 +1,16 @@
 import './itemDetail.css'
+import ItemCount from "../itemcount/ItemCount";
+import {useState} from "react"
 
 const ItemDetail =({productos, buttonId}) =>{
+
+    const[contador, setContador] = useState(0);
+
     return(productos.map((prod)=>{
+
+        const onAdd = (quantity) =>{
+            console.log(`Agregaste ${quantity} unidades de ${prod.name}`); setContador(quantity)
+        }
     if(prod.id == buttonId){
     return(
         <div className="itemDetail" key={buttonId}>
@@ -9,6 +18,8 @@ const ItemDetail =({productos, buttonId}) =>{
             <p>{prod.desciption}</p>
             <p>{prod.precio}</p>
             <img className="ItemDetailimg" src={prod.imagen} alt="" />
+            <h2>Agregaste {contador} de {prod.name}</h2>
+            <ItemCount stock={prod.cantidad} inicial={0} onAdd={onAdd}/>
         </div>
         )
 }

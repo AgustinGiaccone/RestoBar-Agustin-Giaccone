@@ -15,7 +15,7 @@ const ItemListContainer =  ({saludo, miNombre}) =>{
     const getData = new Promise ((resolve, reject) =>{
         setTimeout(() =>{
                 resolve(data)
-            },200)
+            },100)
     })
 
         useEffect(() =>{
