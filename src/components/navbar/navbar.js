@@ -16,6 +16,7 @@ const Navbar = () =>{
                     <li ><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/">Inicio</NavLink></li>
                     <li><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/categoria/comida">comida</NavLink></li>
                     <li><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/categoria/bebida">bebida</NavLink></li>
+                    <li><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/contacto">contacto</NavLink></li>
                 </ul>
             </div>
             <div className='img-carrito'>

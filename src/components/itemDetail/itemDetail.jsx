@@ -1,15 +1,19 @@
 import './itemDetail.css'
 import ItemCount from "../itemcount/ItemCount";
-import {useState} from "react"
+import {useState, useContext} from "react"
+import {CartContext} from '../../context/cartContex'
 
 const ItemDetail =({productos, buttonId}) =>{
+    const {addItem} = useContext (CartContext);
 
     const[contador, setContador] = useState(0);
 
     return(productos.map((prod)=>{
 
         const onAdd = (quantity) =>{
-            console.log(`Agregaste ${quantity} unidades de ${prod.name}`); setContador(quantity)
+            console.log(`Agregaste ${quantity} unidades de ${prod.name}`);
+            setContador(quantity)
+            addItem(prod, quantity)
         }
     if(prod.id == buttonId){
     return(
