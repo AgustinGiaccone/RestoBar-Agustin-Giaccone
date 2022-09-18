@@ -29,8 +29,15 @@
 
 .Navbar-conteiner .img-carrito img{
     width: 50px;
-    margin-right: 100px;
+    margin-right: 5px;
     margin-left: 50px;
+}
+.Navbar-conteiner .img-carrito span{
+    margin-right: 20px;
+    padding-right: 90px;
+    margin-left: 1px;
+    padding-left: 1px;
+
 }
 .Ul-navbar .claseActive{
     color: red;

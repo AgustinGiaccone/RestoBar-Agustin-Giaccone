@@ -6,9 +6,9 @@ import {useParams} from 'react-router-dom';
 
 const ItemListContainer =  ({saludo, miNombre}) =>{
     const{categoryId}= useParams();
-    const onAdd = (quantity) =>{
-        console.log(`compraste ${quantity} unidades`);
-    }
+    // const onAdd = (quantity) =>{
+    //     console.log(`compraste ${quantity} unidades`);
+    // }
 
     const [items, setItem] = useState([]);
 
@@ -35,9 +35,9 @@ const ItemListContainer =  ({saludo, miNombre}) =>{
                 <h1>{saludo}</h1>
                 <h2>{miNombre}</h2>
             </div>
-            <div>
+            {/* <div>
                 <ItemCount inicial={0} stock={5} onAdd={onAdd}/>
-            </div>
+            </div> */}
             <div>
                 {
                     items.length > 0 ? (
