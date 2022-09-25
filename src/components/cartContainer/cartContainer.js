@@ -36,18 +36,9 @@ const pedirOrden = (event)=>{
     })
 }
 
-const actualizarOrden = ()=>{
-//creamos la referencia
-    const queryRef = doc(db,"ordenes", "tYb4ERiAD4RHJHJiYaWM")
-// actualisar nuestro documento de firebase
-    updateDoc(queryRef, {
-        
-    })
-}
 
     return(
         <div>
-            <button onClick={actualizarOrden}>actualizar</button>
             {idOrden ?
             <div>
             <p>su pedido fue tomado, id: {idOrden}</p>
