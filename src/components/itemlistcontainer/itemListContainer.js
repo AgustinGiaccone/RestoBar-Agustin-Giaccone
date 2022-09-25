@@ -3,6 +3,8 @@ import { useState, useEffect } from "react"
 import ItemList from "../itemlist/itemList";
 import ItemCount from "../itemcount/ItemCount";
 import {useParams} from 'react-router-dom';
+import {db} from "../../utils/firebase";
+import {collection, getDocs, query, where} from "firebase/firestore"
 
 const ItemListContainer =  ({saludo, miNombre}) =>{
     const{categoryId}= useParams();
@@ -12,23 +14,43 @@ const ItemListContainer =  ({saludo, miNombre}) =>{
 
     const [items, setItem] = useState([]);
 
-    const getData = new Promise ((resolve, reject) =>{
-        setTimeout(() =>{
-                resolve(data)
-            },100)
-    })
+    // const getData = new Promise ((resolve, reject) =>{
+    //     setTimeout(() =>{
+    //             resolve(data)
+    //         },100)
+    // })
 
-        useEffect(() =>{
-            getData.then((result) =>{
-                if(categoryId){
-                    const productoPorCategoria = result.filter(item=>item.categoria === categoryId )
-                    setItem(productoPorCategoria)
-                }else {
-                    setItem(result)
+    //     useEffect(() =>{
+    //         getData.then((result) =>{
+    //             if(categoryId){
+    //                 const productoPorCategoria = result.filter(item=>item.categoria === categoryId )
+    //                 setItem(productoPorCategoria)
+    //             }else {
+    //                 setItem(result)
+    //             }
+    //             // console.log (result)
+    //         })
+    //     }, [categoryId])
+
+    useEffect(() =>{
+        //creamos la referencia para  traer todos los productos de firebase
+        const queryRef = ! categoryId ? collection(db,"items") :
+        query (collection(db, "items"),where("categoria", "==",categoryId))
+        getDocs(queryRef).then(response=>{
+            const productos = response.docs.map(documentofb =>{
+                const nuevoProducto ={
+                    id:documentofb.id,
+                    ...documentofb.data(),
                 }
-                // console.log (result)
+                return nuevoProducto
             })
-        }, [categoryId])
+            console.log(productos)
+            setItem(productos)
+        })
+    }, [categoryId])
+
+
+
     return(
         <div className="Container">
             <div>

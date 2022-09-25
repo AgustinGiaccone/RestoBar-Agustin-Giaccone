@@ -1,5 +1,7 @@
-import {useContext} from 'react'
-const ContactoPages =()=>{
+import React, {useContext, useEffect} from 'react'
+
+export const ContactoPages =()=>{
+
     return(
         <div>
             ContactoPages

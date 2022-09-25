@@ -2,30 +2,49 @@ import ItemDetail from '../itemDetail/itemDetail'
 import data from '../mock-data/mock-data'
 import {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom';
+import {db} from "../../utils/firebase"
+import {doc, getDoc} from "firebase/firestore"
 
 const ItemDetailContainer =() =>{
 
     const {productId} = useParams();
-    console.log(productId)
+    const [item, setItem] = useState([]);
 
-    const [items, setItem] = useState([]);
+    useEffect (()=>{
+        const getProducto = async ()=>{
+            //referencia
+            const queryRef = doc(db,"items",productId)
+            //solicitud
+            const response = await getDoc(queryRef)
+            const nuevoProducto ={
+                id: response.id,
+                ...response.data(),
+            }
+            // console.log(nuevoProducto)
+            setItem(nuevoProducto)
+            console.log("nuevoproducto",nuevoProducto)
 
-    const getData = new Promise ((resolve, reject) =>{
-        setTimeout(() =>{
-                resolve(data)
-            },100)
-    })
+        }
+        getProducto()
+    },[productId])
+    console.log("item",item)
+
+    // const getData = new Promise ((resolve, reject) =>{
+    //     setTimeout(() =>{
+    //             resolve(data)
+    //         },100)
+    // })
 
 
-        useEffect(() =>{
-            getData.then((result) =>{
-                setItem(result)
-                console.log (result)
-            })
-        }, [])
+    //     useEffect(() =>{
+    //         getData.then((result) =>{
+    //             setItem(result)
+    //             console.log (result)
+    //         })
+    //     }, [])
     return (
         <div className="ItemDetail">
-            <ItemDetail productos={items} buttonId={productId} />
+            <ItemDetail producto={item} buttonId={productId} />
         </div>
     )
 }

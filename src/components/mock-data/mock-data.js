@@ -41,6 +41,24 @@ const data = [
         imagen: AguaSaborizadaImg,
         cantidad: 30,
         categoria: "bebida"
+    },
+    {
+        id: 5,
+        name: "ensalada de fruta",
+        desciption: "tiene durazno frutilla naranja banana kiwi, manzana y jugo",
+        precio: 200,
+        imagen: EnsaladaDeFrutaImg,
+        cantidad: 15,
+        categoria: "postre"
+    },
+    {
+        id: 6,
+        name: "helado",
+        desciption: "tenemos de chocolate, americano, vainilla, frutilla y granisado",
+        precio: 250,
+        imagen: HeladoImg,
+        cantidad: 10,
+        categoria: "postre"
     }
 ]
 
