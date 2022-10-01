@@ -1,8 +1,8 @@
 import Item from "../item/Item"
 import './itemlist.css'
+import React from 'react';
 
 const ItemList = ({productos}) =>{
-    // console.log(productos)
     return(
         <div className="list-card">
             {
@@ -12,7 +12,6 @@ const ItemList = ({productos}) =>{
                     key={prod.id}
                     id={prod.id}
                     name={prod.name}
-                    // description={prod.desciption}
                     precio={prod.precio}
                     imagen={prod.imagen}
                 />

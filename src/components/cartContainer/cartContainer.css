@@ -1,0 +1,31 @@
+/* .producto-carrito{
+    margin: 20px auto;
+    background-color: rebeccapurple;
+} */
+table{
+    width: 100%;
+    border-collapse:collapse ;
+}
+.info-producto{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-producto img{
+    width: 140px;
+}
+th{
+    text-align: left;
+    padding: 9px;
+    color: white;
+    background: rgb(42, 32, 109);
+    font-weight: normal;
+}
+td{
+    padding: 1px 5px;
+}
+td h6{
+    width: 20px;
+    height: 30px;
+    padding: 10px;
+}

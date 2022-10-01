@@ -1,10 +1,9 @@
-import data from '../mock-data/mock-data'
-import { useState, useEffect } from "react"
+import React,{ useState, useEffect } from "react"
 import ItemList from "../itemlist/itemList";
-import ItemCount from "../itemcount/ItemCount";
 import {useParams} from 'react-router-dom';
 import {db} from "../../utils/firebase";
 import {collection, getDocs, query, where} from "firebase/firestore"
+
 
 const ItemListContainer =  ({saludo, miNombre}) =>{
     const{categoryId}= useParams();

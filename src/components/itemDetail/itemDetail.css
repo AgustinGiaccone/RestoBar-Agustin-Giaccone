@@ -3,6 +3,7 @@
     text-align: center;
 }
 
-.itemDetail{
+.itemDetail {
+    display: flex;
     text-align: center;
 }
