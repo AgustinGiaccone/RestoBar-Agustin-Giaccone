@@ -3,6 +3,8 @@
     text-align: center;
 }
 
-.itemDetail{
+.itemDetail {
+    display: flex;
+    -ms-flex-align: center;
     text-align: center;
 }

@@ -1,12 +1,12 @@
 .list-card{
-    background-color: rgba(172, 171, 173, 0.342);
+    background-color: rgba(67, 41, 94, 0.342);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 98%;
     gap: 0;
     padding: 10px;
 }
 
-.list-card img{
+/* .list-card img{
     width: 200px;
-}
+} */

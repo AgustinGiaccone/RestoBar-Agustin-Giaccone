@@ -6,6 +6,7 @@ import {BrowserRouter, Routes,Route} from 'react-router-dom'
 import CartContainer from './components/cartContainer/cartContainer';
 import ContactoPages from './components/contactoPages/contactoPages'
 import { CartProvider } from './context/cartContex';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
