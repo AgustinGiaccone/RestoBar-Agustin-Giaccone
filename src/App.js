@@ -1,4 +1,4 @@
-import Navbar from './components/navbar/navbar';
+import NavBar from './components/navbar/navbar';
 // import './App.css';
 import React from 'react';
 import ItemListContainer from './components/itemlistcontainer/itemListContainer';
@@ -12,7 +12,7 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter>
-        <Navbar/>
+        <NavBar/>
         <Routes>
           <Route exact path="/"element={<ItemListContainer saludo="Bienvenido a mi restobar" miNombre="Soy, Agustin Giaccone"/>} />
           <Route path="/categoria/:categoryId" element={<ItemListContainer/>} />
