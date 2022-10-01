@@ -64,7 +64,7 @@ const pedirOrden = (event)=>{
                                         <tr>
                                             <td>
                                                 <div className="info-producto">
-                                                    <img src={item.imagen}/>
+                                                    <img src={item.imagen} alt={item.name}/>
                                                     <div>
                                                         <p>{item.name}</p>
                                                         <small>{item.precio}</small>
