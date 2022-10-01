@@ -1,4 +1,4 @@
-// import './itemDetail.css'
+import './itemDetail.css'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ItemCount from "../itemcount/ItemCount";
@@ -21,7 +21,7 @@ const ItemDetail =(producto, buttonId) =>{
     console.log(buttonId)
     return(
         <div className="itemDetail" key={buttonId}>
-            <Card style={{ width: '20rem'}}>
+            <Card style={{ width: '20rem', textAlign:"center"}}>
                 <Card.Img variant="top" src={producto.imagen} />
                 <Card.Body>
                 <Card.Title>{producto.name}</Card.Title>

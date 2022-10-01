@@ -4,6 +4,9 @@
 }
 
 .itemDetail {
-    display: flex;
+    text-align: -webkit-center;
+    margin: 15px;
+}
+.card{
     text-align: center;
 }
