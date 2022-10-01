@@ -2,8 +2,9 @@ import {useContext, useState} from 'react'
 import {CartContext} from '../../context/cartContex'
 import {Link} from 'react-router-dom'
 import {db} from "../../utils/firebase"
-import {collection, addDoc, getDoc, doc, updateDoc} from "firebase/firestore"
+import {collection, addDoc} from "firebase/firestore"
 import "./cartContainer.css"
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
@@ -52,29 +53,33 @@ const pedirOrden = (event)=>{
                 <div>
                     <div className="producto-carrito">
                         <table>
-                        <tr>
-                            <th>Producto</th>
-                            <th>cantidad</th>
-                            <th>subtotal</th>
-                        </tr>
+                            <tbody>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>cantidad</th>
+                                    <th>subtotal</th>
+                                </tr>
+                            </tbody>
                         </table>
                             {productCartList.map(item=>(
-                                <div className="producto-carrito">
+                                <div className="producto-carrito" key={item.id}>
                                     <table>
-                                        <tr>
-                                            <td>
-                                                <div className="info-producto">
-                                                    <img src={item.imagen} alt={item.name}/>
-                                                    <div>
-                                                        <p>{item.name}</p>
-                                                        <small>{item.precio}</small>
-                                                        <span onClick={()=>removerProduct(item.id)}>eliminar producto</span>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div className="info-producto">
+                                                        <img src={item.imagen} alt={item.name}/>
+                                                        <div>
+                                                            <p>{item.name}</p>
+                                                            <small>{item.precio}</small>
+                                                            <span onClick={()=>removerProduct(item.id)}>eliminar producto</span>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td><h6>{item.quantity}</h6></td>
-                                            <td>{item.precioXCantidad}</td>
-                                        </tr>
+                                                </td>
+                                                <td><h6>{item.quantity}</h6></td>
+                                                <td>{item.precioXCantidad}</td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                 </div>
                         // <div style={{border:"1px solid black", margin:"2px"}}>
@@ -91,9 +96,6 @@ const pedirOrden = (event)=>{
                     <p>precio total: {precioTotalFinal()}</p>
                     <div>
 
-                    {/* nombre: event.target[0].value,
-            telefono: event.target[1].value,
-            gmail */}
                         {/* <Form onSubmit={pedirOrden}>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>nombre</Form.Label>

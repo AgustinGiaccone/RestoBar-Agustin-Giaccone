@@ -1,10 +1,10 @@
 import {Button} from 'react-bootstrap';
-
+import React from 'react';
 
 function OutlineTypesExample() {
 return (
     <>
-    <Button variant="primary">Agregar al carrtito</Button>{' '}
+    <Button variant="primary">ver mas detalles</Button>{' '}
     </>
 );
 }

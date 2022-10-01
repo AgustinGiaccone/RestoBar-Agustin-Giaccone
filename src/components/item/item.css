@@ -25,3 +25,10 @@
 .boton span{
     text-decoration: none;
 }
+.link-item{
+    text-decoration: none;
+    color: black;
+}
+.link-item:hover{
+    color: rgb(24, 9, 123);
+}

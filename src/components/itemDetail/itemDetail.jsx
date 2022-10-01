@@ -5,6 +5,7 @@ import ItemCount from "../itemcount/ItemCount";
 import {useState, useContext} from "react"
 import {CartContext} from '../../context/cartContex'
 import{Link} from 'react-router-dom'
+import React from 'react';
 
 const ItemDetail =(producto, buttonId) =>{
     const {addItem} = useContext (CartContext);
