@@ -6,7 +6,7 @@ import React from 'react';
 
 const Item = ({id, name, description, precio, imagen, cantidad  }) =>{
     return(
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem',margin:'2%'}}>
             <Link to={`/item/${id}`}  className="link-item">
                 <Card.Img variant="top" src={imagen} />
                 <Card.Body>
