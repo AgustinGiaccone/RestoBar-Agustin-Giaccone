@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from "react"
+import './itemListContainer.css'
 import ItemList from "../itemlist/itemList";
 import {useParams} from 'react-router-dom';
 import {db} from "../../utils/firebase";
@@ -52,7 +53,7 @@ const ItemListContainer =  ({saludo, miNombre}) =>{
 
     return(
         <div className="Container">
-            <div>
+            <div className="presentacion">
                 <h1>{saludo}</h1>
                 <h2>{miNombre}</h2>
             </div>

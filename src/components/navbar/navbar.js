@@ -9,17 +9,17 @@ import {default as BootstrapNavbar} from 'react-bootstrap/Navbar';
 const NavBar = () =>{
     return(
         <div className='Navbar-conteiner'>
-            <div>
-            <NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/"><img src={logo} alt="logo"/></NavLink>
+            <div className="imagen-logo">
+            <NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/"><img  src={logo} alt="logo"/></NavLink>
             </div>
             <div>
                 <BootstrapNavbar bg="dark" variant="dark">
                 <Container>
                 <BootstrapNavbar.Brand><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/">Inicio</NavLink></BootstrapNavbar.Brand>
                 <Nav className="me-auto">
-                <Nav.Link><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/categoria/comida">comida</NavLink></Nav.Link>
-                <Nav.Link><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/categoria/bebida">bebida</NavLink></Nav.Link>
-                <Nav.Link><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/categoria/postre">postre</NavLink></Nav.Link>
+                <Nav.Link><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/categoria/comida">Comida</NavLink></Nav.Link>
+                <Nav.Link><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/categoria/bebida">Bebida</NavLink></Nav.Link>
+                <Nav.Link><NavLink className={({isActive})=>isActive ?"claseActive" : "claseInactive"} to="/categoria/postre">Postre</NavLink></Nav.Link>
                 </Nav>
                 </Container>
                 </BootstrapNavbar>

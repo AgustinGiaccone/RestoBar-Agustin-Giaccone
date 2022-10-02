@@ -18,9 +18,9 @@ const pedirOrden = (event)=>{
     event.preventDefault();
     const orden = {
         buyer:{
-            nombre: event.target[0].value,
-            telefono: event.target[1].value,
-            email: event.target[2].value
+            Nombre: event.target[0].value,
+            Telefono: event.target[1].value,
+            Gmail: event.target[2].value
         },
         items: productCartList,
         total: precioTotalFinal()
@@ -117,7 +117,7 @@ const pedirOrden = (event)=>{
                             <input type="text"/>
                             <p>Telefono:</p>
                             <input type="text"/>
-                            <p>email:</p>
+                            <p>Gmail:</p>
                             <input type="email"/>
                             <button type="submit">pedir orden</button>
                         </form>
