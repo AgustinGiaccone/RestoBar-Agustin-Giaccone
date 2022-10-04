@@ -65,7 +65,7 @@ const ItemListContainer =  ({saludo, miNombre}) =>{
                     items.length > 0 ? (
                         <ItemList productos={items}/>
                     ) :  (
-                        <div> Cargando.....</div>
+                        <div className="Cargando"> Cargando.....</div>
                     )
                 }
             </div>
