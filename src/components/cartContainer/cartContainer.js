@@ -8,6 +8,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+const tab = '\u00A0';
 
 const CartContainer =() =>{
     const {productCartList, removerProduct, clear, precioTotalFinal} = useContext(CartContext)
@@ -37,6 +38,7 @@ const pedirOrden = (event)=>{
 }
 
 
+
     return(
         <div>
             {idOrden ?
@@ -44,14 +46,35 @@ const pedirOrden = (event)=>{
             <p>su pedido fue tomado, id: {idOrden}</p>
             <Link to="/">
             ir al listado de producto
-            </Link>
+            </Link> 
             </div>
             :
-            <div>
+            <div className="carrito">
                 {
                 productCartList.length > 0 ?
                 <div>
-                    <div className="producto-carrito">
+                    <div className="angry-grid">
+                        <div id="item-0">Producto</div>
+                        <div id="item-1">Cantidad</div>
+                        <div id="item-2">Sub total</div>
+                    </div>
+                        {productCartList.map(item=>(
+                        <div className="grid-cart-producto" key={item.id}>
+                            <div id="item-imagen"><img className="imagen-cart" src={item.imagen} alt={item.name}/></div>
+                            <div id="item-name">{item.name}{tab}{tab} ${item.precio}</div>
+                            <div id="item-precioUnitario"></div>
+                            <div id="item-cantidad">{item.quantity}</div>
+                            <div id="item-precio">
+                                ${item.precioXCantidad} {tab}
+                                <Button variant="danger" onClick={()=>removerProduct(item.id)}>X</Button>
+                            </div>
+                        </div>
+
+                        ))}
+
+
+
+                    {/* <div className="producto-carrito">
                         <table>
                             <tbody>
                                 <tr>
@@ -82,18 +105,20 @@ const pedirOrden = (event)=>{
                                         </tbody>
                                     </table>
                                 </div>
-                        // <div style={{border:"1px solid black", margin:"2px"}}>
+                    ))}
+                    </div> */}
+                        {/* // <div style={{border:"1px solid black", margin:"2px"}}>
                         //     <p>{item.name} </p>
                         //     <p>cantidad de compra: {item.quantity}</p>
                         //     <p>precio por unidad: ${item.precio}</p>
                         //     <p>precio de los productos:{item.precioXCantidad} </p>
                         //     <button onClick={()=>removerProduct(item.id)}>eliminar producto</button>
-                        // </div>
-                    ))}
-                    </div>
+                        // </div> */}
 
-                    <button onClick={clear}>vaciar carrito</button>
-                    <p>precio total: {precioTotalFinal()}</p>
+                    <div className="buttonVaciar">
+                        <p>precio total: {precioTotalFinal()}</p>
+                        <button onClick={clear}>vaciar carrito</button>
+                    </div>
                     <div>
 
                         {/* <Form onSubmit={pedirOrden}>
@@ -113,12 +138,9 @@ const pedirOrden = (event)=>{
                         </Form> */}
 
                         <form onSubmit={pedirOrden}>
-                            <p>Nombre:</p>
-                            <input type="text"/>
-                            <p>Telefono:</p>
-                            <input type="text"/>
-                            <p>Gmail:</p>
-                            <input type="email"/>
+                            <input type="text" placeholder="Nombre"/><p></p>
+                            <input type="text" placeholder="Telefono"/><p></p>
+                            <input type="email" placeholder="Correo"/><p></p>
                             <button type="submit">pedir orden</button>
                         </form>
                     </div>

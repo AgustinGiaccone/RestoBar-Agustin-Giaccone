@@ -7,7 +7,6 @@ table{
     border-collapse:collapse ;
 }
 .info-producto{
-    
     display: flex;
     flex-wrap: wrap;
 }
@@ -28,4 +27,133 @@ td h6{
     width: 20px;
     height: 30px;
     padding: 10px;
+}
+
+.angry-grid {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+}
+#item-0 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 2;
+}
+#item-1 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 4;
+}
+#item-2 {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 2;
+    grid-column-end: 5;
+}
+
+
+.carrito {
+    margin: 50px;
+}
+
+.grid-cart-producto {
+    background-color:rgb(19, 15, 58);
+    color:beige;
+    text-align: center;
+    align-items:center;
+    padding-bottom: 1px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+}
+
+.buttonVaciar {
+    margin: 40px;
+    text-align: right;
+}
+
+#item-imagen {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+}
+#item-imagen img{
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+    height: 100%
+    /* margin-left: 25px; */
+}
+
+#item-name {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+#item-name p{
+    text-align: center;
+    /* font-size: 15px; */
+}
+
+#item-cantidad {
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 4;
+}
+#item-cantidad h6{
+    text-align: center;
+    justify-content: center;
+}
+
+
+#item-precio{
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 2;
+    grid-column-end: 5;
+    text-align: center;
+}
+#item-precio p{
+    text-align: center;
+}
+.button-X {
+    color: white;
+    background-color: black;
+    border-radius: 1000px;
+}
+
+form {
+    align:"center";
+    padding: 50px;
+    margin: 0 auto;
+    width: 40%;
+    color: white;
+    background-color:rgb(19, 15, 58);
+    border-radius: 8px;
+}
+
+form input {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    form{
+        align:left;
+        padding: 20px;
+        margin: 0;
+        width: 350px;
+    }
 }
