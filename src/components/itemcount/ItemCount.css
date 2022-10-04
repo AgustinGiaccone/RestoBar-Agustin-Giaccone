@@ -1,8 +1,33 @@
 .contador{
     width: fit-content;
-    background-color: rgba(53, 45, 8, 0.316);
+    background-color: rgb(19, 15, 58);
     border-radius: 20px;
     margin: auto;
     padding: 1rem;
     text-align: center;
+}
+.contador span{
+    color: white;
+}
+.myButton {
+	background:linear-gradient(to bottom, #373737 5%, #3e1cff 100%);
+	background-color:#ffffff;
+	border-radius:50px;
+	border:1px solid #000000;
+	display:inline-block;
+	/* cursor:pointer; */
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 20px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #3e1cff 5%, #373737 100%);
+	background-color:#3e1cff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
