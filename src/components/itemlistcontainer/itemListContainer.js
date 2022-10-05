@@ -8,30 +8,7 @@ import {collection, getDocs, query, where} from "firebase/firestore"
 
 const ItemListContainer =  ({saludo, miNombre}) =>{
     const{categoryId}= useParams();
-    // const onAdd = (quantity) =>{
-    //     console.log(`compraste ${quantity} unidades`);
-    // }
-
     const [items, setItem] = useState([]);
-
-    // const getData = new Promise ((resolve, reject) =>{
-    //     setTimeout(() =>{
-    //             resolve(data)
-    //         },100)
-    // })
-
-    //     useEffect(() =>{
-    //         getData.then((result) =>{
-    //             if(categoryId){
-    //                 const productoPorCategoria = result.filter(item=>item.categoria === categoryId )
-    //                 setItem(productoPorCategoria)
-    //             }else {
-    //                 setItem(result)
-    //             }
-    //             // console.log (result)
-    //         })
-    //     }, [categoryId])
-
     useEffect(() =>{
         //creamos la referencia para  traer todos los productos de firebase
         const queryRef = ! categoryId ? collection(db,"items") :
@@ -49,17 +26,12 @@ const ItemListContainer =  ({saludo, miNombre}) =>{
         })
     }, [categoryId])
 
-
-
     return(
         <div className="Container">
             <div className="presentacion">
                 <h1>{saludo}</h1>
                 <h2>{miNombre}</h2>
             </div>
-            {/* <div>
-                <ItemCount inicial={0} stock={5} onAdd={onAdd}/>
-            </div> */}
             <div>
                 {
                     items.length > 0 ? (
@@ -72,6 +44,5 @@ const ItemListContainer =  ({saludo, miNombre}) =>{
         </div>
         )
 }
-
 
 export default ItemListContainer

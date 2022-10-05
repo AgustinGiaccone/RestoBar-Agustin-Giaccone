@@ -11,7 +11,6 @@ const ItemDetail =(producto, buttonId) =>{
     const {addItem} = useContext (CartContext);
     const[contador, setContador] = useState(0);
     producto = producto.producto
-    // console.log(productouctos)
     const onAdd = (quantity) =>{
                 console.log(`Agregaste ${quantity} unidades de ${producto.name}`);
                 setContador(quantity)
@@ -36,31 +35,11 @@ const ItemDetail =(producto, buttonId) =>{
                 contador > 0 &&
                 <Link to="/cart">
                     <Button variant="outline-primary">Ir al carrito</Button>{' '}
-                {/* <button>ir al carrito</button> */}
                 </Link>
                 }
                 </Card.Body>
             </Card>
         </div>
-
-
-
-        // <div>
-        //     <div className="itemDetail" key={buttonId}>
-        //         <h1>{producto.name}</h1>
-        //         <p>{producto.desciption}</p>
-        //         <p>{producto.precio}</p>
-        //         <img className="ItemDetailimg" src={producto.imagen} alt="" />
-        //         <h2>Agregaste {contador} de {producto.name}</h2>
-        //         <ItemCount stock={producto.cantidad} inicial={0} onAdd={onAdd}/>
-        //         {
-        //         contador > 0 &&
-        //         <Link to="/cart">
-        //         <button>ir al carrito</button>
-        //         </Link>
-        //         }
-        //     </div>
-        // </div>
         )
 }
 

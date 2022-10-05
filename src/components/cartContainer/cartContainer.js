@@ -13,7 +13,6 @@ const tab = '\u00A0';
 const CartContainer =() =>{
     const {productCartList, removerProduct, clear, precioTotalFinal} = useContext(CartContext)
     const [idOrden, setIdOrden]= useState("")
-    // console.log(productCartList)
 
 const pedirOrden = (event)=>{
     event.preventDefault();
@@ -36,8 +35,6 @@ const pedirOrden = (event)=>{
         clear()
     })
 }
-
-
 
     return(
         <div className="background-cart">
@@ -69,84 +66,17 @@ const pedirOrden = (event)=>{
                                 <Button variant="danger" onClick={()=>removerProduct(item.id)}>X</Button>
                             </div>
                         </div>
-
                         ))}
-
-
-
-                    {/* <div className="producto-carrito">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th>Producto</th>
-                                    <th>cantidad</th>
-                                    <th>subtotal</th>
-                                </tr>
-                            </tbody>
-                        </table>
-                            {productCartList.map(item=>(
-                                <div className="producto-carrito" key={item.id}>
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div className="info-producto">
-                                                        <img src={item.imagen} alt={item.name}/>
-                                                        <div>
-                                                            <p>{item.name}</p>
-                                                            <small>{item.precio}</small>
-                                                            <span onClick={()=>removerProduct(item.id)}>eliminar producto</span>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td><h6>{item.quantity}</h6></td>
-                                                <td>{item.precioXCantidad}</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                    ))}
-                    </div> */}
-                        {/* // <div style={{border:"1px solid black", margin:"2px"}}>
-                        //     <p>{item.name} </p>
-                        //     <p>cantidad de compra: {item.quantity}</p>
-                        //     <p>precio por unidad: ${item.precio}</p>
-                        //     <p>precio de los productos:{item.precioXCantidad} </p>
-                        //     <button onClick={()=>removerProduct(item.id)}>eliminar producto</button>
-                        // </div> */}
-
                     <div className="buttonVaciar">
                         <p>precio total: {precioTotalFinal()}</p>
                         <Button variant="secondary" onClick={clear}>Vaciar carrito</Button>{' '}
-                        {/* <Button variant="primary" onClick={clear}>vaciar carrito</Button>{' '} */}
-                        {/* <Button variant="outline-secondary" onClick={clear}>vaciar carrito</Button>{' '} */}
-                        {/* <Button variant="outline-primary" onClick={clear}>vaciar carrito</Button>{' '} */}
-                        {/* <button onClick={clear}>vaciar carrito</button> */}
                     </div>
                     <div>
-
-                        {/* <Form onSubmit={pedirOrden}>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>nombre</Form.Label>
-                            <Form.Control type="text" placeholder="nombre" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>telefono</Form.Label>
-                            <Form.Control type="text" placeholder="telefono" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>email</Form.Label>
-                            <Form.Control type="email" placeholder="@email.com" />
-                            </Form.Group>
-                            <Button variant="primary" type="submit">pedir orden</Button>
-                        </Form> */}
-
                         <form onSubmit={pedirOrden}>
                             <input type="text" placeholder="Nombre"/><p></p>
                             <input type="text" placeholder="Telefono"/><p></p>
                             <input type="email" placeholder="Correo"/><p></p>
                             <Button variant="light"type="submit">Pedir orden</Button>{' '}
-                            {/* <button type="submit">Pedir orden</button> */}
                         </form>
                     </div>
                 </div>

@@ -20,7 +20,6 @@ const ItemDetailContainer =() =>{
                 id: response.id,
                 ...response.data(),
             }
-            // console.log(nuevoProducto)
             setItem(nuevoProducto)
             console.log("nuevoproducto",nuevoProducto)
 
@@ -28,20 +27,6 @@ const ItemDetailContainer =() =>{
         getProducto()
     },[productId])
     console.log("item",item)
-
-    // const getData = new Promise ((resolve, reject) =>{
-    //     setTimeout(() =>{
-    //             resolve(data)
-    //         },100)
-    // })
-
-
-    //     useEffect(() =>{
-    //         getData.then((result) =>{
-    //             setItem(result)
-    //             console.log (result)
-    //         })
-    //     }, [])
     return (
         <div className="ItemDetail">
             <ItemDetail producto={item} buttonId={productId} />
