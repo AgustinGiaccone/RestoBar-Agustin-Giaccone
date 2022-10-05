@@ -40,13 +40,13 @@ const pedirOrden = (event)=>{
 
 
     return(
-        <div>
+        <div className="background-cart">
             {idOrden ?
-            <div>
+            <div className="pedido-tomado">
             <p>su pedido fue tomado, id: {idOrden}</p>
             <Link to="/">
-            ir al listado de producto
-            </Link> 
+            <p>Ir al listado de producto</p>
+            </Link>
             </div>
             :
             <div className="carrito">
@@ -56,7 +56,7 @@ const pedirOrden = (event)=>{
                     <div className="angry-grid">
                         <div id="item-0">Producto</div>
                         <div id="item-1">Cantidad</div>
-                        <div id="item-2">Sub total</div>
+                        <div id="item-2">Subtotal</div>
                     </div>
                         {productCartList.map(item=>(
                         <div className="grid-cart-producto" key={item.id}>
@@ -117,7 +117,11 @@ const pedirOrden = (event)=>{
 
                     <div className="buttonVaciar">
                         <p>precio total: {precioTotalFinal()}</p>
-                        <button onClick={clear}>vaciar carrito</button>
+                        <Button variant="secondary" onClick={clear}>Vaciar carrito</Button>{' '}
+                        {/* <Button variant="primary" onClick={clear}>vaciar carrito</Button>{' '} */}
+                        {/* <Button variant="outline-secondary" onClick={clear}>vaciar carrito</Button>{' '} */}
+                        {/* <Button variant="outline-primary" onClick={clear}>vaciar carrito</Button>{' '} */}
+                        {/* <button onClick={clear}>vaciar carrito</button> */}
                     </div>
                     <div>
 
@@ -141,17 +145,18 @@ const pedirOrden = (event)=>{
                             <input type="text" placeholder="Nombre"/><p></p>
                             <input type="text" placeholder="Telefono"/><p></p>
                             <input type="email" placeholder="Correo"/><p></p>
-                            <button type="submit">pedir orden</button>
+                            <Button variant="light"type="submit">Pedir orden</Button>{' '}
+                            {/* <button type="submit">Pedir orden</button> */}
                         </form>
                     </div>
                 </div>
                 :
-                <>
-                    <p>el carrito eta vacio, agrega algun producto</p>
+                <div className="carrito-vacio">
+                    <p >El carrito esta vacio, agrega algun producto</p>
                     <Link to="/">
-                    ir al listado de producto
+                    <p>Ir al listado de producto</p>
                     </Link>
-                </>
+                </div>
             }
             </div>
             }

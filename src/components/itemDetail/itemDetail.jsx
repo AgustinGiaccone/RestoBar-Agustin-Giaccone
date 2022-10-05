@@ -35,7 +35,8 @@ const ItemDetail =(producto, buttonId) =>{
                 {
                 contador > 0 &&
                 <Link to="/cart">
-                <button>ir al carrito</button>
+                    <Button variant="outline-primary">Ir al carrito</Button>{' '}
+                {/* <button>ir al carrito</button> */}
                 </Link>
                 }
                 </Card.Body>

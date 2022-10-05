@@ -5,8 +5,14 @@
 
 .itemDetail {
     text-align: -webkit-center;
-    margin: 15px;
+    margin: 10px;
+    background: rgb(0,3,38);
+    background: linear-gradient(0deg, rgba(0,3,38,1) 10%, rgba(0,5,152,0.9192051820728291) 100%);
+
 }
 .card{
     text-align: center;
+    /* background: rgb(0,3,38); */
+    /* color: white; */
+    /* background: rgb(19, 15, 58) */
 }
