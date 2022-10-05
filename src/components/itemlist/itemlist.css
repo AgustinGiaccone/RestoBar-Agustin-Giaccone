@@ -1,5 +1,4 @@
 .list-card{
-    /* background-color: rgb(66, 63, 100); */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
@@ -7,7 +6,6 @@
     padding: 10px;
     text-align: center;
 }
-
 @media only screen and (max-width: 900px) {
     .list-card{
         grid-template-columns: 1fr 1fr;
@@ -21,6 +19,3 @@
         grid-template-columns: 1fr;
     }
 }
-/* .list-card img{
-    width: 200px;
-} */

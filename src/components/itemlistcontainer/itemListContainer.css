@@ -1,9 +1,7 @@
 .presentacion h1,h2{
-    /* background-color: blueviolet; */
     color:white;
     text-align: center;
 }
-
 .Container{
     background: rgb(0,3,38);
     background: linear-gradient(0deg, rgba(0,3,38,1) 10%, rgba(0,5,152,0.9192051820728291) 100%);

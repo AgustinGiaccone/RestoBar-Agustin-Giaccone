@@ -7,9 +7,6 @@
     height: 160px;
     background-color: rgb(19, 15, 58);
 }
-/* .imagen-logo{
-    width: inherit;
-} */
 .imagen-logo img{
     width: initial;
     width: 160px;
@@ -26,10 +23,6 @@
         height: 100px;
     }
 }
-/* .Navbar-conteiner img{
-    width: 200px;
-} */
-
 .Navbar-conteiner .Ul-navbar{
     display: flex;
     flex-direction: row;
