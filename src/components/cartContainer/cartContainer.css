@@ -36,6 +36,7 @@ td h6{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0px;
     height: 100%;
+    color: white;
 }
 #item-0 {
     grid-row-start: 1;
@@ -58,7 +59,7 @@ td h6{
 
 
 .carrito {
-    margin: 50px;
+    margin: 10px;
 }
 
 .grid-cart-producto {
@@ -77,6 +78,7 @@ td h6{
 .buttonVaciar {
     margin: 40px;
     text-align: right;
+    color: white;
 }
 
 #item-imagen {
@@ -151,9 +153,42 @@ form input {
 
 @media only screen and (max-width: 600px){
     form{
-        align:left;
+        align:center;
         padding: 20px;
         margin: 0;
         width: 350px;
+    }
+}
+
+.carrito-vacio p{
+    text-align: center;
+    font-size: 40px;
+    text-decoration:  none;
+    color: rgb(255, 255, 255);
+}
+.background-cart{
+    background: rgb(0,3,38);
+    background: linear-gradient(0deg, rgba(0,3,38,1) 10%, rgba(0,5,152,0.9192051820728291) 100%);
+}
+
+@media only screen and (max-width: 370px){
+    form{
+        align:center;
+        padding: 20px;
+        margin: 0;
+        width: auto;
+    }
+}
+.pedido-tomado{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+@media only screen and (max-width: 460px){
+    .pedido-tomado{
+        font-size: 20px;
+    }
+    .carrito-vacio p{
+        font-size: 20px;
     }
 }
