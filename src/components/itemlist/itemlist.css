@@ -19,3 +19,23 @@
         grid-template-columns: 1fr;
     }
 }
+@media only screen and (min-width: 1300px){
+    .list-card{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 1700px){
+    .list-card{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 2000px){
+    .list-card{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 2300px){
+    .list-card{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
