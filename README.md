@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Restobar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripcion
 
-## Available Scripts
+Es un proyecto para el cuerso de ReactJS de coderhouse.
+es una aplicacion de un e-commerce donde se puede navergar por los productos y comprarlos.
+Todos los productos son traidos de un Firebase, en el cual tambien se guarda el orden que se pidio.
 
-In the project directory, you can run:
+### Tecnologias y librerias
 
-### `npm start`
+- El proyecto esta realisado con ReactJs
+- el estilo es con CSS y React-Bootstrap
+- Ruteo con React Router Dom
+- Backend con Firebase
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Descarga y correr el proyecto
+En este proyecto se necesita descargar Git y NodeJS atravez de `npm` ( versiones instaladas de Git 2.25.1,  version de node 16.17.0 y version de npm 8.15.0 )
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para clonar el proyecto se necesita crear una carpeta, abrirla con el cmd/terminal y colocar
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+  git clone git@github.com:AgustinGiaccone/RestoBar-Agustin-Giaccone.git
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+o se puede descargar el archivo ZIP y descomprimirlo.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Una vez creado se necesitara instalar las dependencias.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+  npm install
 
-### `npm run eject`
+Luego para correr en la web con el comando:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+  npm run start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ESTRUCTURA DEL PROYECTO
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![App Screenshot](https://drive.google.com/file/d/1BH6o6MDOYchVAVmRkRnRC8Burifx9CET/view?usp=sharing)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## VIDEO DE SU FUNCIONAMIENTO
+[VIDEO](https://drive.google.com/file/d/1ru3zafee1dAP8wtiE9AufNOhOXmu0ZrZ/view?usp=sharing)
 
-## Learn More
+## SCREENSHOT
+![App Screenshot](https://drive.google.com/file/d/1UEb0j3O_bfNFCdRo6LCmWxnC6Hl698qP/view?usp=sharing)
+![App Screenshot](https://drive.google.com/file/d/1zcUv365wobni8O7YuH-diIfjXU_H84cf/view?usp=sharing)
+![App Screenshot](https://drive.google.com/file/d/1e2-vsM86VXfip-6hLP9FN3lqcpe9SQG7/view?usp=sharing)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## AUTOR
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [@AgustinGiaccone](https://github.com/AgustinGiaccone/RestoBar-Agustin-Giaccone)
