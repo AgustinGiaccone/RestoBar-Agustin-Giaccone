@@ -37,7 +37,7 @@ bash
 
 ## ESTRUCTURA DEL PROYECTO
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://drive.google.com/file/d/1BH6o6MDOYchVAVmRkRnRC8Burifx9CET/view?usp=sharing)
 
 ## VIDEO DE SU FUNCIONAMIENTO
 [VIDEO](https://drive.google.com/file/d/1ru3zafee1dAP8wtiE9AufNOhOXmu0ZrZ/view?usp=sharing)
