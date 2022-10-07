@@ -18,34 +18,33 @@ En este proyecto se necesita descargar Git y NodeJS atravez de `npm` ( versiones
 
 Para clonar el proyecto se necesita crear una carpeta, abrirla con el cmd/terminal y colocar
 
-
-bash
+```bash
   git clone git@github.com:AgustinGiaccone/RestoBar-Agustin-Giaccone.git
-
+```
 
 o se puede descargar el archivo ZIP y descomprimirlo.
 
 Una vez creado se necesitara instalar las dependencias.
 
-bash
+```bash
   npm install
-
+```
 Luego para correr en la web con el comando:
 
-bash
+```bash
   npm run start
+```
+## estructura del proyecto
 
-## ESTRUCTURA DEL PROYECTO
-
-![App Screenshot](https://drive.google.com/file/d/1BH6o6MDOYchVAVmRkRnRC8Burifx9CET/view?usp=sharing)
-
-## VIDEO DE SU FUNCIONAMIENTO
-[VIDEO](https://drive.google.com/file/d/1ru3zafee1dAP8wtiE9AufNOhOXmu0ZrZ/view?usp=sharing)
+[![estructura.png](https://i.postimg.cc/Hxk7rtXh/estructura.png)](https://postimg.cc/cKPJjwDR)
 
 ## SCREENSHOT
-![App Screenshot](https://drive.google.com/file/d/1UEb0j3O_bfNFCdRo6LCmWxnC6Hl698qP/view?usp=sharing)
-![App Screenshot](https://drive.google.com/file/d/1zcUv365wobni8O7YuH-diIfjXU_H84cf/view?usp=sharing)
-![App Screenshot](https://drive.google.com/file/d/1e2-vsM86VXfip-6hLP9FN3lqcpe9SQG7/view?usp=sharing)
+[![inicio-reactjs.png](https://i.postimg.cc/y6wXbwF6/inicio-reactjs.png)](https://postimg.cc/9zY74g8s)
+[![nueva-img-de-filtro-reactjs.png](https://i.postimg.cc/2SnvjqYL/nueva-img-de-filtro-reactjs.png)](https://postimg.cc/YvqjbCht)
+[![carrito-reactjs.png](https://i.postimg.cc/Fz2fn5qM/carrito-reactjs.png)](https://postimg.cc/kRvXBZ7s)
+
+## vide de funcionamiento
+[VIDEO](https://drive.google.com/file/d/1ru3zafee1dAP8wtiE9AufNOhOXmu0ZrZ/view?usp=sharing)
 
 ## AUTOR
 
