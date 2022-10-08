@@ -3,8 +3,8 @@
 ## Descripcion
 
 Es un proyecto para el curso de ReactJS de coderhouse.
-es una aplicacion de un e-commerce donde se puede navergar por los productos y comprarlos.
-Todos los productos son traidos de un Firebase, en el cual tambien se guarda el orden que se pidio.
+Es una aplicacion web de un e-commerce donde se puede navergar por los productos y comprarlos.
+Toda la data es obtenida de Firebase, en el cual tambien se guarda las ordenes de los clientes.
 
 ### Tecnologias y librerias
 
@@ -14,14 +14,9 @@ Todos los productos son traidos de un Firebase, en el cual tambien se guarda el 
 - Backend con Firebase
 
 ## Descargar y correr el proyecto
-En este proyecto se necesita descargar Git y NodeJS a travez de `npm` ( versiones instaladas de Git 2.25.1,  version de node 16.17.0 y version de npm 8.15.0 )
+En este proyecto se necesita descargar `NodeJS`(version de node 16.17.0) a travez de `npm` (version de npm 8.15.0 )
 
 Para clonar el proyecto se necesita crear una carpeta, abrirla con el cmd/terminal y colocar
-
-```bash
-  git clone git@github.com:AgustinGiaccone/RestoBar-Agustin-Giaccone.git
-```
-
 o se puede descargar el archivo ZIP y descomprimirlo.
 
 Una vez creado se necesitara instalar las dependencias.
@@ -29,14 +24,30 @@ Una vez creado se necesitara instalar las dependencias.
 ```bash
   npm install
 ```
-Luego para correr en la web con el comando:
+Luego para correr el servidor web localmente usar el comando:
 
 ```bash
   npm run start
 ```
-## estructura del proyecto
-
-[![estructura.png](https://i.postimg.cc/Hxk7rtXh/estructura.png)](https://postimg.cc/cKPJjwDR)
+## Estructura del proyecto
+ ```bash
+.
+├── public
+└── src
+    ├── components
+    │   ├── cartContainer
+    │   ├── cartwidget
+    │   ├── img
+    │   ├── item
+    │   ├── itemcount
+    │   ├── itemDetail
+    │   ├── itemDetailContainer
+    │   ├── itemlist
+    │   ├── itemlistcontainer
+    │   └── navbar
+    ├── context
+    └── utils
+```
 
 ## SCREENSHOT
 [![inicio-reactjs.png](https://i.postimg.cc/y6wXbwF6/inicio-reactjs.png)](https://postimg.cc/9zY74g8s)
