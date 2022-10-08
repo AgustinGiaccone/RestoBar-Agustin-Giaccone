@@ -50,12 +50,12 @@ Luego para correr el servidor web localmente usar el comando:
 ```
 
 ## SCREENSHOT
-[![inicio-reactjs.png](https://i.postimg.cc/y6wXbwF6/inicio-reactjs.png)](https://postimg.cc/9zY74g8s)
-[![nueva-img-de-filtro-reactjs.png](https://i.postimg.cc/2SnvjqYL/nueva-img-de-filtro-reactjs.png)](https://postimg.cc/YvqjbCht)
-[![carrito-reactjs.png](https://i.postimg.cc/Fz2fn5qM/carrito-reactjs.png)](https://postimg.cc/kRvXBZ7s)
+[![nueva-imagen-inicio.png](https://i.postimg.cc/4343sR6q/nueva-imagen-inicio.png)](https://postimg.cc/Bjy3BywB)
+[![nueva-imagen-filtro.png](https://i.postimg.cc/q7mv7DQR/nueva-imagen-filtro.png)](https://postimg.cc/FfL4WZM5)
+[![nueva-imagen-carrito.png](https://i.postimg.cc/x12Cpzc0/nueva-imagen-carrito.png)](https://postimg.cc/fJ8DJkcF)
 
 ## video de funcionamiento
-[VIDEO](https://drive.google.com/file/d/1ru3zafee1dAP8wtiE9AufNOhOXmu0ZrZ/view?usp=sharing)
+[VIDEO](https://drive.google.com/file/d/1XbZtG6XNGv4zxQr8yyaXNgvBJGP-e-ZD/view?usp=sharing)
 
 ## AUTOR
 
